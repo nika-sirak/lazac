@@ -1,0 +1,519 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 400;
+}
+address {
+  font-style: normal;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  /* font-family: 'Roboto Slab', serif;; */
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.188;
+}
+
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+  /* padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto; */
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.logo {
+  margin-left: 16px;
+}
+.phone {
+  margin-top: 11px;
+  margin-right: 43px;
+}
+.menu {
+  margin-top: 16px;
+}
+.menu-list {
+  display: flex;
+  /* margin-left: -15px;
+  margin-right: -15px; */
+}
+.menu-item + .menu-item {
+  margin-left: 30px;
+}
+/* .menu-item {
+  margin-left: 15px;
+  margin-right: 15px;
+} */
+.menu-link {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.172;
+  color: #001e64;
+}
+.menu-link:hover {
+  border-bottom: 1px solid #001e64;
+}
+.header-hero {
+  background-image: url(../images/hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 50px;
+  margin-top: -110px;
+  min-height: 100vh;
+}
+.header-hero > .container {
+  position: relative;
+}
+.hero-title {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.319;
+  color: #001e64;
+  max-width: 589px;
+  padding-top: 175px;
+  padding-left: 112px;
+  margin-bottom: 60px;
+}
+.hero-slider {
+  max-width: 522px;
+  padding-left: 112px;
+  padding-top: 57px;
+  padding-bottom: 135px;
+}
+.hero-slider-text {
+  font-size: 18px;
+  line-height: 1.2;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+.slick-prev,
+.slick-next {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  left: 40px;
+}
+.slick-prev {
+  top: 0;
+}
+.slick-next {
+  bottom: 0;
+}
+.slick-dots {
+  list-style: none;
+  position: absolute;
+  left: 35px;
+  top: 58px;
+  bottom: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.slick-dots button {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  color: #fff;
+  font-size: 24px;
+  line-height: 1.167;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.slick-active button {
+  opacity: 1;
+}
+.slick-dots button::before {
+  content: "0";
+}
+
+.slick-dots li:nth-child(n + 10)::before {
+  content: "";
+}
+
+.hero-btn {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.319;
+  color: #fff;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 87px;
+  padding-right: 87px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  margin-left: 112px;
+
+  position: absolute;
+  bottom: 70px;
+  transition: all 0.3s;
+}
+.hero-btn:hover {
+  background-color: #fff;
+  color: #001e64;
+}
+.hero-content-box {
+  font-size: 18px;
+  line-height: 1.167;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+}
+.hero-content.active {
+  font-weight: 700;
+}
+/* ======= Product ======= */
+.product {
+  padding-top: 100px;
+}
+.product-inner {
+  display: flex;
+  justify-content: space-between;
+}
+.product-name {
+  width: 510px;
+  text-align: center;
+  cursor: pointer;
+}
+.product-name-item {
+  font-family: "Roboto Slab", serif;
+  font-size: 24px;
+  line-height: 1.319;
+  color: #232222;
+}
+.product-name-item + .product-name-item {
+  margin-top: 30px;
+}
+.product-name-item.slick-current {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.319;
+  color: #001e64;
+}
+.product-prev {
+  margin-bottom: 30px;
+}
+.product-next {
+  margin-top: 30px;
+}
+.product-prev,
+.product-next {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.product-content {
+  width: 600px;
+}
+.product-element-box {
+  display: flex;
+  align-items: center;
+}
+.product-img {
+  object-fit: cover;
+  margin-right: 48px;
+}
+.product-content-list {
+  display: flex;
+  flex-direction: column;
+}
+.product-content-item + .product-content-item {
+  margin-top: 30px;
+}
+.product-content-title {
+  font-family: "Roboto Slab", serif;
+  font-size: 18px;
+  line-height: 1.319;
+  color: #001e64;
+  margin-bottom: 10px;
+}
+.product-desc-title {
+  font-family: "Roboto Slab", serif;
+  font-size: 24px;
+  line-height: 1.319;
+  color: #001e64;
+  margin-bottom: 20px;
+}
+
+.product-desc-text {
+  font-size: 16px;
+  line-height: 1.2;
+  color: #232222;
+  margin-bottom: 25px;
+}
+
+.product-content-btn {
+  display: inline-block;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.319;
+  color: #001e64;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 87px;
+  padding-right: 87px;
+  border: 1px solid #001e64;
+  background-color: transparent;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.product-content-btn:hover {
+  background-color: #001e64;
+  color: #fff;
+}
+/* ======= Seafood features ======== */
+.seafood-features {
+  background-image: url(../images/seafood.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding-top: 290px;
+  padding-bottom: 98px;
+}
+.seafood-features-list {
+  display: flex;
+  justify-content: space-around;
+}
+.seafood-features-item {
+  font-family: "Roboto Slab", serif;
+  font-size: 18px;
+  line-height: 1.319;
+  color: #fff;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  min-height: 165px;
+
+  background-image: url(../images/seashell.svg);
+  background-repeat: no-repeat;
+}
+/* ======== Seafood ======= */
+.seafood {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.seafood-list {
+  margin-bottom: 100px;
+}
+.seafood-item {
+  display: flex;
+  justify-content: space-between;
+}
+.seafood-item + .seafood-item {
+  margin-top: 50px;
+}
+.seafood-item-inner {
+}
+.seafood-title {
+  font-family: "Roboto Slab", serif;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #001e64;
+  max-width: 490px;
+  margin-bottom: 30px;
+}
+.seafood-desc {
+  font-size: 16px;
+  line-height: 1.2;
+  color: #232222;
+  max-width: 420px;
+}
+.seafood-desc + .seafood-desc {
+  margin-top: 25px;
+}
+.seafood-item-right-text {
+  max-width: 420px;
+  margin-right: 180px;
+}
+.seafood-blockquote {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.seafood-blockquote-text {
+  font-family: "Roboto Slab", serif;
+  font-size: 18px;
+  line-height: 1.319;
+  color: #232222;
+  max-width: 628px;
+  margin: 0 auto;
+  text-align: center;
+}
+/* ======= Contacts ======== */
+.contacts {
+  background-image: url(../images/conatcts.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+.contacts-box {
+  margin-left: auto;
+  background-color: #fff;
+  padding: 33px 0 33px 20px;
+  max-width: 390px;
+}
+.contacts-box-text {
+  font-family: "Roboto Slab", serif;
+  font-size: 18px;
+  line-height: 1.319;
+  color: #001e64;
+  width: 195px;
+}
+.contacts-box-item {
+  font-size: 18px;
+  line-height: 1.172;
+  color: #232222;
+  margin-top: 30px;
+}
+.contacts-box-item span {
+  display: block;
+}
+/* ======  Footer ===== */
+.footer {
+  padding-top: 50px;
+  padding-bottom: 110px;
+}
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 45px 0 23px;
+}
+.footer-social-list {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.footer-social-item + .footer-social-item {
+  margin-left: 10px;
+}
+.menu.footer {
+  padding-bottom: 30px;
+}
+.footer-social-link:hover path {
+  fill: #001e64;
+}
+.footer-social-link path {
+  transform: all 0.3s;
+}
+
+/* ====== Adaptive ===== */
+.menu-btn {
+  width: 40px;
+  border: none;
+  background-color: transparent;
+  padding: 13px 0;
+  position: relative;
+  display: none;
+}
+.menu-btn::before,
+.menu-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: #001e64;
+}
+.menu-btn::before {
+  top: 0;
+}
+.menu-btn::after {
+  bottom: 0;
+}
+.menu-btn span {
+  display: block;
+  height: 4px;
+  background-color: #001e64;
+}
+@media (max-width: 1000px) {
+  .menu-list {
+    position: absolute;
+    z-index: 1;
+    left: 20%;
+    right: 20%;
+    top: -350px;
+    display: block;
+    background-color: #fff;
+    transition: all 0.5s;
+  }
+  .menu-item + .menu-item {
+    margin-left: 0;
+  }
+  .menu-btn {
+    display: block;
+    z-index: 10;
+  }
+  .menu {
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: 12px;
+  }
+  .menu-link {
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .menu-active {
+    top: 60px;
+  }
+}
+@media (max-width: 745px) {
+  .hero-title {
+    font-size: 38px;
+    max-width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 470px) {
+  .hero-title {
+    padding-left: 10px;
+  }
+  .hero-slider {
+    padding-left: 50px;
+  }
+  .slick-dots {
+    left: 5px;
+  }
+  .slick-prev,
+  .slick-next {
+    left: 9px;
+  }
+  .hero-btn {
+    margin-left: 50px;
+  }
+}
